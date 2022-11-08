@@ -1,11 +1,26 @@
 <html>
   <head>
-      <script>
-          for (let i = 0; i < 101; i++) {
-              console.log(`The value of i: ${ i }`)
-          }
-      </script>
-  </head>
-  <body>
-  </body>
+    <script>
+        let i = 0
+        let sumEven = 0
+
+        function isEven(i) {
+            if(i%2 !=1) {
+                return true;
+            } else {
+                return false;
+            }
+        } 
+        console.log (isEven (9))
+       
+        while(i<100) {
+            if(isEven(i)) {
+                sumEven+=i
+            }
+            i++
+        }
+        console.log (sumEven)
+    </script>
+
+    </head>
 </html>
